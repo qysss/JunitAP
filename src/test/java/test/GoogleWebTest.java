@@ -33,13 +33,6 @@ public class GoogleWebTest {
     }
 
 
-    @ParameterizedTest
-    @Tag("Minor1123123123123123123")
-    void selenideButtonsTest1(String locale, List<String> buttons) {
-
-
-    }
-
     @Disabled
     @DisplayName("Проверка попапа загрузки фото")
     @Test
