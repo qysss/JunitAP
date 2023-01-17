@@ -45,7 +45,7 @@ public class SelenideWebTest {
             "Kotlin",
             "SQL",
             "See all tools"})
-    @ParameterizedTest(name = "Отображение кнопок{0} в навигационном меню шапки сайта")
+    @ParameterizedTest(name = "Displaying buttons {0} in the navigation menu of the site header")
     @Tag("Critical")
     void testingPresenceButtonsInNavigationMenu(String inventory) {
         $(INVENTORY_LOCATOR).shouldHave(text(inventory));
@@ -55,7 +55,7 @@ public class SelenideWebTest {
             "Deutsch, Unentbehrliche Tools für Software-Entwickler*innen und Teams",
             "English, Essential tools for software developers and teams"
     })
-    @ParameterizedTest(name = "Проверка наличия текста ({1}) в головной секции для выбранного языка {0}")
+    @ParameterizedTest(name = "Checking for the presence of text ({1}) in the head section for the selected language {0}")
     @Tag("Major")
     void checkTextInHeader(String locale, String text) {
         $(LANGUAGE_BUTTON_LOCATOR).click();
@@ -73,7 +73,7 @@ public class SelenideWebTest {
     }
 
     @MethodSource
-    @ParameterizedTest(name = "Проверка коректного названия кнопок из списка {1} на сайте jetBrains в локали {0}")
+    @ParameterizedTest(name = "Checking the correct name of the buttons from the list {1} on the JetBrains website in the locale {0}")
     @Tag("Minor")
     void checkingCorrectNameButtonsInFooterSiteForDifferentLanguages(String locale, List<String> buttons) {
         $(LANGUAGE_BUTTON_LOCATOR).click();
