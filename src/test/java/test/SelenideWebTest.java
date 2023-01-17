@@ -22,6 +22,7 @@ public class SelenideWebTest {
     private static final String BASE_URL = "https://www.jetbrains.com/";
     private static final String LANGUAGE_BUTTON_LOCATOR = "button[data-test=language-picker]";
     private static final String LANGUAGE_GRID_LOCATOR = "div[data-test=language-grid] [data-test=list-item]";
+    /*В следующих локаторах опускался по дивам ибо сайт генерит свои классы*/
     private static final String HEADER_LOCATOR = "div#head-section>section>div>div>div>h1";
     private static final String FOOTER_LOCATOR = "div#footer-container>footer>div";
     private static final String INVENTORY_LOCATOR = "div#head-section>section>div>div:nth-of-type(4)>div:nth-of-type(2)>ul";
